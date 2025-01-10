@@ -1,7 +1,7 @@
 const expres = require("express");
 const router = expres.Router();
 
-module.exports = function ({ unAuthenticated, isVerifyRecaptcha, Passport }) {
+modurts = function ({ unAuthenticated, isVerifyRecaptcha, Passport }) {
 	router
 		.get("/", unAuthenticated, (req, res) => {
 			req.session.redirectTo = req.query.redirect || "/";
