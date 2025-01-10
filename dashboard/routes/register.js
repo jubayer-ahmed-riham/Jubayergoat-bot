@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const expres = require("express");
-const router = expres.Ro
+const router = expres.Router();
+
 module.exports = function ({
 	unAuthenticated, isWaitVerifyAccount, isVerifyRecaptcha,
 	validateEmail, randomNumberApikey, transporter,
