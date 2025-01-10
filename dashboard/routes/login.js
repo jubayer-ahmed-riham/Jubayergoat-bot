@@ -1,7 +1,7 @@
 const expres = require("express");
 const router = expres.Router();
 
-modurts = function ({ unAuthenticated, isVerifyRecaptcha, Passport }) {
+module.exports = function ({ unAuthenticated, isVerifyRecaptcha, Passport }) {
 	router
 		.get("/", unAuthenticated, (req, res) => {
 			req.session.redirectTo = req.query.redirect || "/";
@@ -35,6 +35,10 @@ modurts = function ({ unAuthenticated, isVerifyRecaptcha, Passport }) {
 					});
 				});
 			})(req, res, next);
+		});
+
+	return router;
+};			})(req, res, next);
 		});
 
 	return router;
