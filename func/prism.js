@@ -1,6 +1,6 @@
 
 
-const styles = {
+consttyles = {
 	cdata: "color:#8292a2",
 	comment: "color:#8292a2",
 	doctype: "color:#8292a2",
