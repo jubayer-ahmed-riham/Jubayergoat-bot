@@ -112,9 +112,7 @@ module.exports = function (checkAuthConfigDashboardOfThread) {
 			req.flash("errors", {
 				msg: "[!] Chỉ quản trị viên của nhóm chat hoặc những thành viên được cho phép mới có thể chỉnh sửa dashboard"
 			});
-			return res.redirect("/dashboard");
-		},
-
+			return res.redirect("/dashb
 		async isAdmin(req, res, next) {
 			const userID = req.user.facebookUserID;
 			if (!global.GoatBot.config.adminBot.includes(userID)) {
@@ -131,4 +129,4 @@ module.exports = function (checkAuthConfigDashboardOfThread) {
 			next();
 		}
 	};
-};
+}
