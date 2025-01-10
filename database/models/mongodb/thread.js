@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const threadModel = new Schema({
-	threadID: {
-		type: String,
+	threadID: {	type: String,
 		unique: true
 	},
 	threadName: String,
