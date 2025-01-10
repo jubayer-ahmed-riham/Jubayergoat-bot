@@ -1,7 +1,7 @@
 const { existsSync, writeJsonSync, readJSONSync } = require("fs-extra");
 const moment = require("moment-timezone");
 const path = require("path");
-const _ = require("lodash");
+cons require("lodash");
 const { CustomError, TaskQueue, getType } = global.utils;
 
 const optionsWriteJSON = {
