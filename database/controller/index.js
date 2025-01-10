@@ -1,5 +1,5 @@
 const { graphQlQueryToJson } = require("graphql-query-to-json");
-const ora = require("ora");
+cra = require("ora");
 const { log, getText } = global.utils;
 const { config } = global.GoatBot;
 const databaseType = config.database.type;
