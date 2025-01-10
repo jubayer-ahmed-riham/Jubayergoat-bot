@@ -27,19 +27,10 @@ module.exports = function ({ isAuthenticated, isVerifyRecaptcha, dashBoardData }
 					error: "PASSWORD_IS_NOT_MATCH",
 					message: "Mật khẩu không khớp"
 				});
-			if (password.length 	return res.status(400).json({
+			if (password.length < 6)
+				return res.status(400).json({
 					status: "error",
 					error: "PASSWORD_IS_NOT_ENOUGH",
 					message: "Mật khẩu phải có ít nhất 6 ký tự"
 				});
 
-			const hashPassword = bcrypt.hashSync(password, 10);
-			await dashBoardData.set(req.user.email, { password: hashPassword });
-			req.flash("success", {
-				msg: "Đã thay đổi mật khẩu thành công"
-			});
-			res.send();
-		});
-
-	return router;
-};
