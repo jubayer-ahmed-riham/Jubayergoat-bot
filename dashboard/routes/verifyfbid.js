@@ -1,5 +1,4 @@
-const express = require("express");
-const router = express.Router();
+const express = require("express");t router = express.Router();
 const { findUid, getText } = global.utils;
 
 module.exports = function ({ isAuthenticated, randomNumberApikey, expireVerifyCode, isVerifyRecaptcha, dashBoardData, api, createLimiter, config }) {
