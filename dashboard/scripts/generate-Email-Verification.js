@@ -3,7 +3,7 @@ const { config } = global.GoatBot;
 module.exports = (code, text) => `<body class="main full-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
 <table class="wrapper"
     style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #fff;"
-adding="0" cellspacing="0" role="presentation">
+    cellpadding="0" cellspacing="0" role="presentation">
     <tbody>
         <div style="background-color: #f5f6f8;">
             <div class="layout one-col stack"
