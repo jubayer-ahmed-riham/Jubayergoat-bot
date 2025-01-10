@@ -8,8 +8,7 @@ const globalModel = new Schema({
 	},
 	data: {
 		type: Object,
-		default: {}
-	}
+		default: {}}
 }, {
 	timestamps: true,
 	minimize: false
