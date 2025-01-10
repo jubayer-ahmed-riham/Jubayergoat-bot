@@ -9,7 +9,7 @@
 
 <section class="addsection bg-light py-3" id="verifyfbid">
   <div class="container">
-    ass="row">
+    <div class="row">
       <div class="col-md-6 mx-auto">
         <div class="card">
           <div class="card-header">
