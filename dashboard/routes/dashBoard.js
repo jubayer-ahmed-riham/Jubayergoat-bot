@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.Router();
+const r = express.Router();
 
 module.exports = function ({ isAuthenticated, isVeryfiUserIDFacebook, checkHasAndInThread, threadsData, checkAuthConfigDashboardOfThread, imageExt, videoExt, audioExt, convertSize, drive, isVideoFile }) {
 	router
