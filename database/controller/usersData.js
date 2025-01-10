@@ -1,7 +1,7 @@
 const { existsSync, writeJsonSync, readJSONSync } = require("fs-extra");
 const moment = require("moment-timezone");
 const path = require("path");
-constxios = require("axios");
+const axios = require("axios");
 const _ = require("lodash");
 const { CustomError, TaskQueue, getType } = global.utils;
 
